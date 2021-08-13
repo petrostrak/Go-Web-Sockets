@@ -59,7 +59,7 @@ func renderPage(w http.ResponseWriter, tmpl string, data jet.VarMap) error {
 }
 
 func Home(w http.ResponseWriter, r *http.Request) {
-	if err := renderPage(w, "home.html", nil); err != nil {
+	if err := renderPage(w, "home.jet", nil); err != nil {
 		log.Println(err)
 	}
 }
